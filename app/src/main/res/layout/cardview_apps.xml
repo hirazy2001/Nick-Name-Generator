@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F1F1EC"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_moreapps"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            >
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/symbol1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_cliper" />
+
+            <RelativeLayout
+                android:layout_toRightOf="@id/symbol1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/name"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Video Slideshow Editor"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_below="@id/name"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Sponsored" />
+            </RelativeLayout>
+            <Button
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/install"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/btn_install"
+                android:text="INSTALL" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/contentapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="60dp"
+            android:text="Remind you of your next period, ovulation day as well as your fertile time"
+            android:textColor="#5B5B56" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_7sdp"
+            android:weightSum="3.2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/banner1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                />
+            <ImageView
+                android:id="@+id/banner2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                />
+            <ImageView
+                android:id="@+id/banner3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Get it on Google Play" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#F1F1EC">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:background="#6C6565"
+            android:gravity="bottom"
+            tools:ignore="Suspicious0dp" />
+    </LinearLayout>
+
+</LinearLayout>

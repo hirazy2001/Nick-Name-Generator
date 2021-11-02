@@ -16,14 +16,16 @@
 
     <RelativeLayout
         android:id="@+id/layout_head_main"
-        android:background="#FFFFFF"
+        android:background="#5BAFD5"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         >
         <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_appname"
             android:textStyle="bold"
-            android:textSize="15sp"
-            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="20dp"
             android:layout_width="wrap_content"
@@ -39,11 +41,21 @@
             android:layout_height="wrap_content"
             android:src="@mipmap/options"
             />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ic_moreapps"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_toLeftOf="@+id/img_option"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/surprise"
+            />
     </RelativeLayout>
     <LinearLayout
         android:id="@+id/layout_content_main"
         android:layout_below="@+id/layout_head_main"
-        android:background="@color/color_bg_main"
+        android:background="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="vertical"
@@ -130,9 +142,10 @@
 
                 >
                 <ImageView
+                    android:layout_marginRight="@dimen/_4sdp"
                     android:layout_gravity="center"
                     android:id="@+id/ic_change"
-                    android:src="@mipmap/ic_loop"
+                    android:src="@mipmap/ic_reload"
                     android:layout_weight="1.2"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -143,10 +156,10 @@
                     android:layout_gravity="center"
                     android:gravity="center|left"
                     android:textSize="18sp"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#000000"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aleatorio"
+                    android:text="Random"
                     />
             </LinearLayout>
             <LinearLayout
@@ -164,17 +177,17 @@
                     <TextView
                         android:layout_marginLeft="5dp"
                         android:layout_gravity="center"
-                        android:textColor="@color/color_text"
+                        android:textColor="#000000"
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Copiados y Guardados: "
+                        android:text="Copied and Saved: "
                         />
                     <TextView
                         android:id="@+id/listsize"
                         android:layout_marginLeft="3dp"
                         android:textSize="15sp"
-                        android:textColor="@color/color_text"
+                        android:textColor="#000000"
                         android:text="0"
                         android:layout_gravity="center"
                         android:gravity="center"
@@ -193,17 +206,22 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_bg_main" />
+        android:background="@color/colorWhite" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_gravity="center"
-
-        android:id="@+id/adMobView"
+        android:id="@+id/rlAds1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
        >
-
+<!--       <com.google.android.gms.ads.AdView-->
+<!--           ads:adSize="BANNER"-->
+<!--           android:id="@+id/adview"-->
+<!--           android:layout_centerHorizontal="true"-->
+<!--           android:layout_width="wrap_content"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           />-->
     </RelativeLayout>
     </LinearLayout>
 

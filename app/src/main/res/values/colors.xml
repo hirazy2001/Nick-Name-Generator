@@ -2,10 +2,11 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="color_bg_main">#21211C</color>
+
+    <color name="color_bg_main">#000000</color>
     <color name="color_bg_text">#F6B902</color>
 
     <color name="color_text">#FFFFFF</color>
     <color name="color_text_privacy">#131311</color>
+    <color name="yellow">#FFFF00</color>
 </resources>

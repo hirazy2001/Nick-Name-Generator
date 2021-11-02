@@ -31,7 +31,7 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:id="@+id/content1"
         />
     <LinearLayout
@@ -43,7 +43,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="35dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="35dp"
@@ -62,7 +62,7 @@
             android:textColor="#000000"
             android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="@dimen/_30sdp"
             android:text="@string/text_close"
             />
     </LinearLayout>

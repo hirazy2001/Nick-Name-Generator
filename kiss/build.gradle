@@ -1,0 +1,67 @@
+apply plugin: 'com.android.library'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+
+
+    }
+
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.android.gms:play-services-ads:19.4.0'
+    implementation 'com.facebook:inshot:4.3.0'
+    implementation 'com.amitshekhar.android:jackson-android-networking:1.0.2'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.flurry.android:analytics:12.2.0@aar'
+
+    implementation 'org.greenrobot:eventbus:3.2.0'
+
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'vn.aib.ratedialog:ratedialog:1.0.0'
+    implementation'com.facebook.android:audience-network-sdk:6.+'
+
+    implementation 'com.github.jgabrielfreitas:BlurImageView:1.0.1'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+}
